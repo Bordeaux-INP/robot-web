@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Robot, Robotique ENSEIRB-MATMECA, ENSC, Bordeaux INP, ROS">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Robotique et apprentissage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="/favicon.png" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <!-- NAVBAR
+       ================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Option Robotique et apprentissage</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="http://www.bordeaux-inp.fr">Bordeaux INP</a></li>
+				<li><a href="http://eirlab.net" title="Le laboratoire associatif de fabrication et de prototypage de Bordeaux INP">Fablab Eirlab</a></li>
+				<li><a href="http://ros4.pro" title="Le workshop ROS4PRO étudiants + professionnels sur la robotique opensource">Workshop robotique</a></li>
+				<li><a href="https://robotmakersday.fr/" title="Le rendez-vous semestriel des roboticiens aquitains">Le Robot Makers' day</a></li>
+                <li><a href="mailto:specialite-ra@ros4.pro" title="Une question sur cette spécialité ?">Contact</a></li>
+			</ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+	 ================================================== -->
+    <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active text-center">
+		  <video class="video-fluid" autoplay loop muted style="width:100%;">
+			<source src="http://aubrune.eu/assets/aubrune.mp4" type="video/mp4" />
+	      </video>
+		</div>
+	  </div>
+    </div><!-- /.carousel -->
+    
+
+    <!-- Marketing messaging and featurettes
+	 ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+      <div class="row featurette">
+        <img class="featurette-image img-responsive pull-left" style="width:20em" src="assets/logo_inp.png" alt="Bordeaux INP">
+		<h2 class="featurette-heading"><span class="text-muted">Robotique et apprentissage</span></h2>
+		<p>
+		La spécialité Robotique et apprentissage de l’ENSEIRB-MATMECA et ENSC est une option de 3<sup>e</sup> année
+		de l'ENSC et de l'ENSEIRB-MATMECA quelle que soit la filière d'origine des étudiants (informatique, électronique, cognitique, mécanique).
+		Elle se déroule sur un semestre de cours et projets puis un semestre de stage, ou bien en contrat de professionnalisation en entreprise.
+		</p>
+		<p>
+		Cette spécialité forme des ingénieurs avec des compétences pluridisciplinaires nécessaires à la conception de robots :
+		logiciel, mécatronique, communication homme-machine et apprentissage machine.
+		Les élèves ingénieurs apprennent la théorie et la pratique de robots variés, qu'ils
+		soient roulants ou manipulateurs, au service de problématiques variées : de la robotique 
+		sociale à la robotique industrielle.
+		</p>
+		<p>
+		En outre, pour mieux comprendre les mécanismes d'apprentissage chez l'homme d'une part et doter les machines de capacités de
+		prédiction et d'adaptation d'autre part, les neurobiologistes utilisent le robot comme plateforme d'expérimentation d'algorithmes d'apprentissage
+		(machine learning), également abordés dans la spécialité.
+		</p>
+      </div>
+      
+      <div class="featurette">
+	  <a href="http://www.aquitaine-robotics.com/"><img class="featurette-image img-responsive pull-right" style="width:20em" src="assets/logo_cluster.png" alt="Cluster Aquitaine Robotics, the Human-Robot cluster">	  </a>
+		<h2 class="featurette-heading">
+		<span class="text-muted">Spécialité connectée aux entreprises</span>
+		</h2>
+		<p>
+		Cette spécialité est fortement connectée aux professionnels de la robotique via le cluster <a href="http://www.aquitaine-robotics.com/">Aquitaine Robotics</a>.
+		Elle bénéficie de projets concrets inspirés des besoins de plus de 110 entreprises de la filière robotique de Nouvelle Aquitaine. La région se différencie
+		par son excellence en robotique collaborative (cobotique) en interaction homme-robot. Les champs d’application sont très nombreux : santé, transport, logistique, agriculture, défense, éducation …
+		</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+    <div class="featurette">
+      <img class="featurette-image img-responsive pull-left" style="width:20em" src="assets/logo_eirlab_ros4pro.png" alt="Le fablab Eirlab et le workshop ROS4PRO">
+      <h2 class="featurette-heading">Des échanges avec des professionnels</h2>
+      <p>
+	  Inscrit dans la mouvance « maker » caractérisée par la création, le prototypage et le partage de projets mécatroniques,
+	  la spécialité est en partie enseignée à <a href="http://eirlab.net">Eirlab</a> le « fablab » de Bordeaux INP. Eirlab est un laboratoire de fabrication
+	  organisé sous forme associative, disposant de machines à commande numérique pour prototyper ses propres robots et échanger avec les autres « makers », qu'ils soient étudiants ou professionnels.
+	  </p>
+	  <p>
+	  Afin de favoriser les échanges des étudiant.e.s avec les ingénieurs en activités et les entreprises, trois temps forts ont lieu 
+	  durant la formation : Le <a href="http://robotmakersday.fr/">Robot Makers' day</a>, le rendez-vous aquitain des roboticiens ; le salon
+	  <a href="https://meet-up-educate.fr/">Meet-up & Educate</a> dédié à la mise en place de projets robotiques communs entre entreprises et
+	  étudiants, ainsi que le <a href="http://www.ros4.pro/"workshop ROS4PRO></a> portant sur le <a href="https://www.ros.org/">logiciel robotique
+	  opensource ROS</a> auquel participent également des ingénieurs en activité dans le cadre de leur formation continue.
+	  </p>
+    </div>
+
+
+
+      <hr class="featurette-divider">
+
+      <div class="container marketing">
+	<h2 class="featurette-heading"><span class="text-muted">Programme des &eacute;tudes 2018-2019.</span></h2>
+	<p>Selectionner un cours pour afficher son programme détaillé.<br/>
+	  <!-- SYLLABUS -->
+	  <table id="syllabus" class="table table-hover table-bordered table-striped">
+	  </table>
+
+	  <div class="modal fade" role="dialog" id="RE300">
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+		<div class="modal-body">
+		  Les réseaux de nouvelle génération sont devenus de plus en plus complexes, interconnectant différentes technologies et architectures (IP, WiFi, DVB-T/S, UMTS, GSM/GPRS) à travers plusieurs plates-formes matérielles et logicielles pour offrir une multitude de services (données, téléphonie, diffusion vidéo, vidéoconférence, etc.). Ces nouvelles technologies réseaux ont permis une augmentation spectaculaire des capacités, notamment à l'accès. Ce cours a pour objectif de passer en revue l'architecture et l'évolution des réseaux de nouvelle génération.
+		  <ul>
+		    <li>Introduction aux réseaux de nouvelle génération NGN
+		    <li>Convergence des réseaux et des services
+		    <li>Contraintes de qualité de service et de la sécurité dans les réseaux NGN
+		      
+		    <li>Quelques exemples d'évolution de réseau
+		      Les réseaux sans fil de type 802.11 : principe, architecture et évolution (sécurité chiffremen,  authentification, intégrité, mécanismes de QoS, ...) 
+		      migration de IPv4 à  IPv6
+		  </ul>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+      </div>
+    </div>
+    <div class="modal fade" role="dialog" id="RE312">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Ce module permet d'acquérir les bases de la transmission de données sur les réseaux de télécommunication. À partir de repères historiques, institutionnels et techniques, ce module décrit l'évolution des réseaux et des protocoles, du Réseau Téléphonique Commuté des années 60 au réseau Internet "haut-débit". Chaque réseau est décrit sous ses divers aspects, architecture, protocoles et possibilités en terme de service de transmission de données
+	    <ul>
+	      <li>Les acteurs de l'environnement des Télécommunications et la Normalisation
+	      <li>La boucle locale cuivre
+	      <li>Le Réseau Téléphonique Commuté public (Public Switched Telephone Network) - RTC
+	      <li>Le système de signalisation numéro 7 (Signaling System 7) – SS7
+	      <li>La hiérarchie numérique plésiochrone (Plesiochronous Digital Hierarchy) - PDH
+	      <li>La hiérarchie numérique synchrone (Synchronous Digital Hierarchy) – SDH, SONET
+	      <li>Le multiplexage optique en longueur d'onde (Wavelength Division Multiplexing) - WDM, DWDM, CWDM
+	      <li>Les Liaisons Louées
+	      <li>Sécurité de la couche Liaison de données
+	      <li>Le Réseau à Commutation de Paquets X25
+	      <li>Le Réseau Numérique à Intégration de Services (Integrated Services Digital Network) - RNIS
+	      <li>Le mode de transfert asynchrone (Asynchronous Transfer Mode) - ATM
+	      <li>Les protocoles 802.3, 802.1qp, SNAP et PPP
+	      <li>Les raccordements de ligne numérique d'abonné cuivre (x Digital Subscriber Line) - ADSL, VDSL, SHDSL
+	      <li>La boucle locale fibre optique (Fiber To The x) – FTTH, FTTB, FTTC
+	      <li>Les réseaux "mobile" 2G/3G/4G - GSM, GPRS, EDGE, UMTS, LTE
+	      <li>Les protocoles de communication sans fil - WiFi
+	      <li>La voix et la Téléphonie sur IP (Voice over IP and Telephony over IP) – VoIP, ToIP, sécurité ToIP (sRTP, ZRTP, ...)
+	      <li>Les réseaux privés virtuels (Virtual Private Network) – VLAN, L2TP, TSL, IPSEC
+	      <li>Le MultiProtocol Label Switching - MPLS
+	      <li>Les réseaux de prochaine génération (Next Generation Network) - NGN
+	      <li>Le sous-système multimédia IP pour les réseaux de prochaine génération (IP Multimedia Subsystem) - IMS
+	      <li>Le Cloud Computing
+	    </ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="RE319">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Dans ce module, nous étudions comment concevoir, modéliser et valider formellement des systèmes informatiques communicants. Nous illustrons ces techniques sur des protocoles de communication.
+	    <ul>
+	      <li> Historique et problème
+	      <li> Méthodes et outils de validation
+	      <li> Systèmes d'automates
+	      <li>Logique temporelle
+	      <li>Modelchecking
+	      <li>Propriétés classiques
+	      <li>Structure des protocoles
+	      <li>Modélisation et contrôle de flot
+	      <li>Promela - Spin
+	      <li>Test formel à base de spécification 
+	    </ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="IT334">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Ce module sur la virtualisation vise à donner aux élèves une vision
+	    complète du domaine, depuis l'invention des premières techniques de
+	    virtualisation jusqu'à leur utilisation actuelle dans le cloud ou les
+	    technologies devops (via la création d'environnements de développement
+	    virtuels).<br/>
+	    Une approche bas-niveau fait également partie du cours : l'architecture
+	    des ordinateurs (mémoire, processeur et autres) est étudiée pour
+	    comprendre le fonctionnement de la virtualisation.<br/>
+	    Côté système, des TPs permettent de se familiariser avec la manipulation
+	    des outils de virtualisation sous Linux. De même, plusieurs hyperviseurs
+	    sont étudiés : QEMU-KVM, VirtualBox, VMware.<br/>
+	    Lors des TPs, les principes des réseaux sont revus et mis en pratique :
+	    pare-feu, réseau interne/externe, routage, commutation.
+	    Côté cybersécurité, sont étudiées les vulnérabilités (attaque d'un
+	    Windows virtualisé), l'utilisation de la virtualisation lors d'attaques,
+	    les menaces sur la virtualisation, la sûreté de fonctionnement dans le
+	    cadre d'infrastructures virtuelles, l'analyse de disques virtuels
+	    post-mortem (forensic).
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="PG306">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Le but de ce module est de présenter les concepts fondamentaux des systèmes répartis : appel de procédure à distance, objet distribué, nommage, hétérogénéité, interopérabilité, sécurité, ... Ce cours s'appuie sur des exemples concret de technologie qui seront mis en oeuvre systématiquement en TD.
+	    <ul>
+	      <li>Introduction aux systèmes répartis
+	      <li>RPC
+	      <li>Java RMI
+	      <li>CORBA
+	    </ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="RE315">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Ce cours décrit l'architecture réseau pour la SSI, les détections d'intrusion, les tests d'intrusion, la sécurité sur le web et présente également de la cryptographie appliquée.
+	    <ul>
+	      <li>
+		Architecture réseau pour la SSI
+		<ul>
+		  <li>    Introduction à la SSI: 
+		    Objectifs, propriétés,
+		    Principes,
+		    Vocabulaire,
+		    Profils des attaquants et menaces
+		  <li>    Protocoles réseau:
+		    Modèle ISO,
+		    Fonctionnement,
+		    Vulnérabilités, exploitation,
+		    Contre-mesures
+		  <li>    Architectures réseau:
+		    Cloisonnement,
+		    Équipements de sécurité:
+		    Pare-feu,
+		    Proxies, relais applicatifs
+		</ul>
+	      <li> Détection d'intrusion réseau
+		<ul>
+		  <li>    Détection par signature / par heuristique
+		  <li>    Détection sur capture réseau / mécanismes de l'OS / des applications
+		  <li>    Normalisation, agrégation et corrélation d'événements
+		  <li>    Reporting et synthèse
+		</ul>
+	      <li>Tests d'intrusion
+		<ul>
+		  <li>    Principe d'une intrusion informatique
+		  <li>    Comparaison test d'intrusion / intrusion réelle
+		  <li>    Objectifs et démarche d'un test d'intrusion
+		  <li>    Outils
+		  <li>        Metasploit
+		  <li>        Hping / Nping / Scapy
+		  <li>        Nmap
+		</ul>
+	      <li>Cryptographie appliquée
+		<ul>
+		  <li>    Rappel des principes:
+		    Cryptographie symétrique & asymétrique,
+		    Fonctions de hachage,
+		    Chiffrement & signature,
+		    Algorithmes, modes
+		  <li>    Implémentation logicielle de SSL:
+		    Étude de plusieurs vulnérabilités,
+		    Problèmes, impacts,
+		    Exploitation & détection,
+		    Correction & protection
+		  <li>    Certificats & infrastructures de gestion de clefs
+		</ul>
+	      <li>Sécurité Web
+		<ul>
+		  <li>    Navigation Web:
+		    Protocoles,
+		    Navigateur, greffons, serveurs,
+		    Modèles de sécurité
+		  <li>    Étude de vulnérabilités classiques (SQLi, XSS, etc.):
+		    Concept,
+		    Recherche & exploitation avancée,
+		    Détection & Protection
+		  <li>    Outils:
+		    Sqlmap / W3af / Burp
+		</ul>
+	    </ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="RE351">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Introduction au reverse engineering
+	    <ol>
+	      <li> Introduction
+	      <li> Analyse statique:  Premiers pas, Récupération d'informations, Représentation du code
+	      <li> Résultat: Analyse de fonctions, Suivi du flot de données, Bonus
+	    </ol>
+
+	    Principes d'exploitation de vulnérabilités
+	    <ol><li> Introduction: Règles du jeu, Vulnérabilités cryptographiques, Vulnérabilités logiques, Manipulation des chaînes de caractères
+	      <li> Attaques: Injections,  Corruption mémoire, Programmation sécurisée
+	      <li> OS hardening: La part de l'administrateur, Protections
+	    </ol>
+
+	    Sécurité des systèmes Linux
+	    <ol><li> Introduction à la sécurité système: Généralités,  Aspects juridiques, Concepts de base, Sécurité du matériel
+	      <li> Sécurité du système: Authentification, Autorisation, Audit
+	    </ol>
+
+	    Conteneurs et virtualisation sous Linux
+	    <ol><li>Contexte: De quoi veux-t-on se protéger ? Les mécanismes de protection
+	      <li> Conteneurs vs. Virtualisation: Définitions, Virtualisation:
+		<ul><li> Émulation complète
+		  <li> Émulation niveau logiciel (type 2)
+		  <li> Émulation niveau hôte (type 1)
+		  <li> Disques durs virtuels
+		  <li> Exemple de vulnérabilité
+		</ul>
+		Conteneurs
+		<ul><li>
+		    Premier pas : chroot()
+		  <li> Mécanismes avancés du noyau Linux
+		  <li>Sandbox
+		  <li> LXC, LibContainer et Docker
+		  <li> Exemple de vulnérabilité
+		</ul>
+	      <li> Applications: Malware, Provisioning, Conteneurs, Aide au développement, Cloud, Virtualisation API : LibVirt, Compartimentation,
+	      <li> Contrôle d’accès renforcé : MAC, Modèles de politique de sécurité, Les plus courants : SELinux et AppArmor, Le rebelle : grsecurity
+	    </ol>
+
+	    Sécurité des systèmes Windows
+	    <ol><li> Principes généraux de sécurité: Les 3 "A", Structure internes, Comptes et groupes, Contrôle et accès
+	      <li> Mécanismes de sécurité système: Architecture système, Authentification, Stratégies de sécurité, Système de fichiers, Base de registre, Outils
+	      <li> Mécanismes de sécurité réseau: Active Directory, Partage de fichiers, IPSec sous Windows, Pare-feu
+	      <li> Sécurité des applications: Prévention des attaques par overflow
+		<ul><li> Prévention d’exécution (DEP/NX)
+		  <li> Contrôle des exceptions
+		  <li> PatchGuard
+		</ul>
+		Autres mécanismes
+		<ul><li> Stratégies de restriction logicielle
+		  <li> Sécurité du boot
+		</ul>
+		Principe de sandboxing (navigateurs)
+	    </ol>
+
+	    Extraction et Analyse de malware : du forensics au reverse
+	    <ol><li> "Ecosystème" des malwares: Qui sont les attaquants ? Définitions, Exploitation As A Service : les Exploits Kits,  Les défenseurs, Monétisation
+	      <li> Forensics : extraction des malwares, Objectifs, Forensics réseau, Forensics système, Forensics applicatif
+	      <li> Analyse des malwares:  Généralités de l’analyse,  Outils d’automatisation,  Analyse  "à la main",  Packers,  Obscurcissement
+	    </ol>
+	    Sécurité physique.
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="RE316">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    <ul>
+	      <li>    SPAM: quelle approche pour bloquer le spam ?
+		<ul><li>        Contexte,
+		  <li>        SMTP,
+		  <li>        Filtrage enveloppe SMTP,
+		  <li>        Filtrage sur le contenu
+		</ul>
+	      <li>    Postfix et le filtrage de courrier:
+		<ul><li>        Architecture / Installation /Configuration,
+		  <li>       Filtrage interne / externe à Postfix,
+		  <li>       TP Postfix: Installation / Configuration / Test d'envoi / Filtrage
+		</ul>
+	      <li>    SSI-EBIOS
+		<ul>
+		  <li>        SSI: concepts liés à la Sécurité des Systèmes d'Information,
+			     <li>        Définitions,
+			     <li>        Exemples d'attaques (Estonie, Stuxnet, Flame, Snowden)
+			     <li>        La SSI en France
+			     <li>        Normes
+			     <li>        Documents de référence (PMSI / PSSI)
+		</ul>
+	      <li>    SSI: EBIOS
+	      <li>    EBIOS - étude de cas
+	    </ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="IT354">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Ce module est d'une part autour des outils d'administration Microsoft, et dans une perspective plus large, sur la cybersécurité des systèmes industriels.<br/>
+
+	    Les Architectures Systèmes à bases des outils Microsoft:
+	    <ul><li>Rôles et fonctionnalités de serveur
+	      <li>Configuration d'une infrastructure Active-Directory
+	      <li>Mise en place des services réseau entreprise (dns, dhcp, nap,np)
+	    </ul>
+	    Cybersécurité des systèmes industriels :
+	    <ul>
+	      <li> Définition des différents types de systèmes industriels.
+	      <li> Composition d'un système industriel
+	      <li> Les langages de programmation d'un PLC.
+	      <li> Les protocoles et bus de terrain.
+	      <li> Architecture standard & sûreté de fonctionnement.
+	    </ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" role="dialog" id="RE317">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    La première partie de ce module permet une prise en main par les étudiants des techniques et des outils d'administration d'un système Unix.
+
+	    La seconde partie consiste à étudier l'administration de routeurs CISCO et la mise en place de VLAN. La fin du cours présente la mise en place de qualité de services (QoS) dans les réseaux.
+	    <ul>
+	      <li>Présentation générale des techniques d'administration des réseaux
+	      <li>Configuration de machines
+	      <li>Recherche d'information et d'outils pour l'adminitration de machines
+	      <li>Administration de routeurs CISCO (protocole RIP), mise en VLAN
+	      <li>Concepts de qualité de service dans les réseaux
+	      <li>Problèmes soulevés par la QoS
+	      <li>Protocole pour la mise en place de la qualité de service 
+	    </ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="RE353">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Le cours présente la cyberdéfense et des aspects sociaux et sociétaux de la cybersécurité:
+	    <ul>
+	      <li> Doctrine d’emploi, détection, agrégation, normalisation, corrélation, reporting, stockage, gestion de crise, communication, préservation de la preuve, réponse juridique, réaction, traitement, Computer Security Incident Response Team (CISRT), coordination, plan de continuité d’activité (PCA), plan de reprise d’activité (PRA), cyber résilience.
+	      <li>Ingénierie sociale, phishing, contournement de la politique de sécurité, ergonomie de la sécurité, hygiène informatique, géopolitique et intelligence économique.
+	    </ul>
+	    Le cours sera complété par une partie portant sur la géopolitique de la cyberdéfense.  
+
+	    <br/>Le plan de ce cours est organisé en 2 parties:
+	    <br/>
+	    Cyberdéfense
+	    <ul>
+	      <li>    Connaitre les aspects stratégiques et les menaces:
+		Cyberguerre,
+		Cyberespionnage,
+		Doctrine d’emploi,
+		Aspects opérationnels
+	      <li>    Construire et optimiser un arsenal défensif:
+		Connaître/étudier,
+		Protéger/surveiller,
+		Contrôler/interagir,
+		Analyser/capitaliser,
+		Aspects opérationnels
+	      <li>    Préparation:
+		Détection,
+		Agrégation,
+		Normalisation,
+		Corrélation,
+		Reporting,
+		Stockage,
+		Aspects opérationnels
+	      <li>    Traitement:
+		Aspects opérationnels,
+		Analyses,
+		Gestion de crise,
+		Communication,
+		Préservation de la preuve,
+		Réponse juridique,
+		Réaction, Traitement,
+		Computer Security Incident Response Team (CSIRT)
+		Coordination
+	      <li>    Résilience:
+		plan de continuité d’activité (PCA),
+		plan de reprise d’activité (PRA),
+		vers une cyber résilience,
+		Aspects opérationnels,
+		Conclusions et perspectives d'avenir (Cyberdéfense, le mythe de Sisyphe)
+	    </ul>
+
+	    Aspects sociaux et sociétaux
+	    <ul>
+	      <li>    Rappel du contexte:
+		Pénétrations effectives de cyber-infrastructures,
+		Aspects opérationnels,
+	      <li>    Ingénierie sociale:
+		Comment contourner une politique de sécurité,
+		Exemples basiques et complexes,
+		Aspects offensifs liés à la messagerie (phishing...),
+		Aspects offensifs liés au matériel (USB...),
+		Aspects offensifs divers (déplacements, organisations...)
+	      <li>    Hygiène informatique:
+		Théorie et réalité,
+		Individus, Entreprises, Etats,
+		Ergonomie de la sécurité,
+		Lutte informatique défensive associée,
+		Aspects opérationnels
+	      <li>    Géopolitique et intelligence économique:
+		Impacts technologiques et organisationnels,
+		Aspects opérationnels,
+		Conclusions et perspectives d'avenir (aspects sociaux et sociétaux)
+	    </ul>
+	    Par ailleurs, un cours spécifique portera sur la nécessité de ne pas limiter l’approche de ce que nous appellerons « l’environnement cyber » à un réseau mondial de fibres transportant des informations sous un format particulier. Depuis les années 1980, de multiples structures se sont créées en vue de développer les protocoles et les formats de l’Internet, de bâtir des normes partagées, de louer/vendre les accès et les contenus et produisant au passage une certaine idéologie. Ainsi est apparu un système socio-technique, presque impossible à réguler par du droit mais qui est l’objet d’appropriations économiques, techniques et politiques remettant profondément en cause l’idéologie initiale. C’est dans cet environnement que sont menées les plus grandes batailles d’aujourd’hui, celles de l’information et de l’économie.
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" role="dialog" id="RE352">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Ce module couvre différents aspects légaux, de certification et de normalisation en sécurité. Il propose également une partie d'informatique légale (forensics).<br/> 
+
+	    Concept de Sécurité du Système d'Information
+	    <ul><li>        Objectifs
+	      <li>        Principes de Mise en Œuvre
+	      <li>        Élaboration d'une Politique de Sécurité du SI
+	      <li>        Analyse de risques
+	    </ul>
+	    Gestion et Gouvernance de la Sécurité du Système d'Information
+	    <ul>
+	      <li>        Les Systèmes de Management:
+		Principes communs (PDCA),
+		SMQ (ISO 9001),
+		SMSI (ISO 2700x),
+		SMCA (ISO 22301)
+	      <li>        Les standards sectoriels:
+		PCI-DSS,
+		SOX, RGS, …
+	      <li>        Les guides de bonnes pratiques:
+		ITIL, Cobit,
+		ANSSI, SANS, NIST
+	      <li>        Le droit et la réglementation:
+		Les obligations légales et/ou réglementaires liées à l'activité,
+		Les 12 SAIV (Secteurs d'Activité d'Importance Vitale),
+		La Loi de Programmation Militaire et les OIV (Opérateurs d'Importance Vitale),
+		La réglementation internationale
+	      <li>        Les certifications:
+		Objectifs,
+		Démarches et processus de certification,
+		Certification d'une organisation,
+		Certification d'un produit logiciel ou matériel
+                (Démarche du concepteur,
+                Démarche de l'acheteur)
+		Les moyens mis en œuvre pour assurer la gestion de la SSI (
+                Audits et mises à l'épreuve,
+                Les CERT,
+                Les SOC)
+	    </ul>
+	    Forensics
+	    <ul>
+	      <li> Objectif: 
+		<ul>
+		  <li> apporter des éléments fiables, voire probants permettant d'apprécier une situation (utilisation d'un outil informatique)
+		  <li> expertise judiciaire & réponse à incident
+		  <li> fondements juridiques: cadre légal d'intervention, recevabilité de la preuve : fiabilité et préservation,  focus sur l'expertise judiciaire
+		  <li> Méthodologie inforensique 
+		</ul>
+	      <li>une histoire de traces
+		<ul>
+		  <li> généralités: connaissance du fonctionnement intrinsèque d'un système,
+		    spécificités des systèmes et des applications,
+		    système de fichiers et focus sur "NTFS"
+		  <li> acquisition:  principes et précautions,
+		    différents types de supports: disque dur, supports amovibles,
+		    smartphones,
+		    mémoire volatile,
+		    utilisation
+		  <li> <b>travaux pratiques</b> acquisition (avec contrôle d'intégrité) & exploitation d'une image disque	  
+		</ul> 
+	      <li>extraction des données
+		<ul><li> récupération de données effacées: notions de "carving", fichiers de restauration 
+		  <li> identification des différents artefacts d'un système windows:
+		    analyse des bases de registres (les ruches, les clés, les valeurs...),
+		    données de navigation web ,
+		    analyse des emails & messageries instantannées,
+		    fichiers de journalisation et autres artefacts, 
+		  <li><b>travaux pratiques:</b> utilisation de différents outils (regedit, jumplist, shellbags, prefetch...)
+		</ul>
+	      <li>consolidation chronologique
+		<ul><li> recherche d'éléments sur un interval de temps
+		  <li> corrélation d'artefacts
+		  <li> création d'une ligne de temps
+		  <li> analyse
+		  <li><b>travaux pratiques: </b>création d'une timeline (log2timeline, mactime, ...)	
+		</ul>
+	      <li>limites
+		<ul><li> les outils anti-forensics:
+		    effacer les traces (ccleaner),
+		    changer les données de temps (timestomp)
+		  <li>célérité : Live Forensics et Fast Forensics:
+		    les processus & la détection de malwares,
+		    les mots de passe en mémoire
+		</ul>
+	    </ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="PR311">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Ce module consiste en la réalisation d'un projet de développement conséquent étalé sur tout le semestre. Les sujets seront choisis au début du semestre et des groupes seront formés.
+	    <br/>
+	    A peu près toutes les semaines, une séance d'avancement et de discussion aura lieu pour contrôler et garantir l'évolution des projets.
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="PR318">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Ce projet a pour objectif de réaliser des programmes montrant l’utilisation de certaines vulnérabilités et l’impact que cela peut avoir. Les programmes réalisés ont pour finalité d’être utilisés dans le cadre de démonstrations auprès d’organismes publics, d’entreprises, afin de les sensibiliser à la cyber-sécurité. Ce projet est fait en partenariat avec l’Agence Nationale des Systèmes de Sécurité Informatique (ANSSI).
+	    <br/>
+	    A peu près toutes les semaines, une séance d'avancement et de discussion aura lieu pour contrôler et garantir l'évolution des projets.
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" role="dialog" id="CE320">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Soutenance de 30 minutes devant un jury composé de professionnels et d'enseignants. Il s'agit pour l'élève "ingénieur" de présenter à partir d'une simulation de recrutement l'orientation qu'il a donné à son projet professionnel (métier, secteur...)
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade" role="dialog" id="CE321">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    A travers une simulation l'étudiant doit comprendre les mécanismes de fonctionnement de l'entreprise ( coûts, comptabilité, finances, marketing, production...)
+	    <br/>
+	    Chaque équipe, regroupée en unité autonome de gestion, doit gérer un ensemble de produits sur un marché virtuel. 
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade" role="dialog" id="LC301">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Développer la communication en situation professionnelle
+	    <ul>
+	      <li>Thèmes de la culture de l'entreprise et l'interculturel
+	      <li>Entraînement aux situations de communication professionnelle: présentations, réunions, entretien d'embauche
+	    </ul>
+	    ou bien
+	    <ul><li>
+		projet de recherche guidé, rédaction du rapport
+	    </ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" role="dialog" id="CE302">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-body">
+	    Les étudiants ont peu à peu intégrés leurs nouvelles finalités de formation. Ils n’ont plus seulement à développer des compétences académiques pour répondre aux exigences des concours et contrôles de connaissances, ils perçoivent mieux désormais que le développement de leurs compétences s’inscrit dans une direction professionnelle, que leurs habiletés techniques et scientifiques n’auront de sens qu’en lien avec des situations de productions, que leurs savoirs de haut niveau s’expriment en savoir-faire.
+
+	    Ils ont vocation à devenir ingénieur et pour cela à en développer les différentes habiletés professionnelles, scientifiques, techniques et relationnelles. C’est au cours des 10 à 12 mois de stages répartis tout au long de leur formation qu’ils pourront concrétiser leur questionnement et leurs apprentissages.
+	    <ul>
+	      <li>
+		Identifier les différentes situations professionnelles et la typologie des compétences qui en découlent
+		<ul><li>        Du vécu à l’expérience : par trinômes les participants feront le récit de leur stage de l’été passé à travers un prisme à trois dimensions, 1) le travail en lui-même, la mission, les conditions de sa réalisation, 2) les relations professionnelles avec les collègues, le chef de projet, le directeur de service, 3) l’environnement autour du travail, les incidences du personnel sur le professionnel.
+		  <li>      D’un vécu syncrétique et affectif à une expression à visée conceptuelle portée par les mots choisis pour le dire, les participants élaboreront peu à peu des éléments concrets d’une pratique professionnelle. Ils pourront mesurer par les échanges et dans “l’après-coup” ceux qui peuvent leur être facilitant, ceux qui leur posent quelques difficultés, ceux qu’ils pourront contourner, ceux que lesquels ils doivent progresser, ceux qu’ils partagent avec d’autres, ceux qui leur sont propres…
+		</ul>
+	      <li>    Partant de là, cette connaissance améliorer de soi en situation professionnelle sera reprise pour le compte de la conception des présentations écrites et orales à concevoir et à mettre en œuvre pour la recherche du stage à venir, et plus tard d’un premier emploi.
+		<ul><li>        Lecteur et concepteur de CV : par trinôme les participants échanges leur proposition de CV (et de lettre de motivation) et identifient les points à discuter.
+		  <li>     Ces outils de présentation professionnels n’étant encadrés que par des normes d’usage, les participants auront à discuter et argumenter sur les choix de posture et de contenu qu’ils pourraient faire selon ces étapes fonctionnelles entre eux et leurs interlocuteurs professionnels inscrit dans la chaîne du recrutement (stage ou emploi).
+		  <li>     Un dernier td précédant une situation de simulation s’attachera particulièrement à la construction d’un entretien d’embauche, à la présentation du candidat de ses arguments mais aussi de sa posture et de l’image qu’il donne à voir.
+	    </ul></ul>
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+
+    
+    <div class="container marketing">
+      <h2 class="featurette-heading" id="demos"><span class="text-muted">Projets robotiques</span>
+      </h2>
+      <p>
+      Voici quelques projets robotiques sur lesquels des étudiants de la spécialité ont pu travailler encadrés par des professionnels du secteur.
+	  </p>
+	  <br/>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="assets/metabot.png" alt="Robot Metabot" width="140" height="140">
+          <h2>Metabot : des robots à pattes pour tous</h2>
+          <p>Une plateforme ouverte dédiée à l'éducation de la primaire au supérieur</p>
+          <p><a target="_blank" class="btn btn-primary" href="http://www.metabot.fr/" role="button">En savoir +</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="assets/cherry.jpg" alt="Projet Cherry" width="140" height="140">
+		  <h2>Cherry : Rompre l'isolement des enfants hospitalisés</h2>
+		  <p>Cherry utilise le robot humanoïde Poppy Torso comme compagnon pour les enfants hospitalisés et ainsi compenser leur rupture sociale.</p>
+          <p><a target="_blank" class="btn btn-primary" href="https://www.poppy-project.org/fr/projects/cherry" role="button">En savoir +</a></p>
+	    </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="assets/tiago.png" alt="Robot TIAGo" width="140" height="140">
+          <h2>TIAGo</h2>
+          <p>Permettre à un robot d'assister nos tâches ménagères en attrapant et manipulant les objets de notre quotidien.</p>
+          <p><a target="_blank" class="btn btn-primary" href="http://robotics.catie.fr/" role="button">En savoir +</a></p>
+		</div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+    <!-- /END THE FEATURETTES -->
+f    
+    <!-- FOOTER -->
+    <footer class="text-center">
+		<div>
+		<img src="assets/logo_inp.png" style="width:6em" alt="Bordeaux INP">
+		<a href="#">⬆ Revenir en haut</a></div>
+    </footer>
+
+
+<!-- Bootstrap core JavaScript
+     ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="jquery-3.1.0.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+
+    var SYLLABUS = [
+    {
+    code:"UE I9RSR-A",
+    name:"Réseau de communication",
+    ec:[{code:"RE300",name:"Evolution des réseaux",h:24,ects:"1.5"},
+    {code:"RE312",name:"Réseaux des télécommunications",h:40,ects:3},
+    {code:"RE319",name:"Méthodes formelles et applications",h:24,ects:"1.5"}
+    ]},
+    { code:"UE I9RSR-B",
+    name:"Sécurité et administration des réseaux",
+    ec:[{code:"RE351",name:"Sécurité des systèmes, sécurité physique",h:45,ects:3},
+    {code:"RE316",name:"Protocole d'administration des réseaux",h:16,ects:"1.25"},
+    {code:"RE315",name:"Sécurité des réseaux",h:48,ects:"3.25"}
+    ]},
+    { code:"UE I9RSR-C",
+    name:"Outils d'administration des réseaux",
+    ec:[{code:"IT354",name:"Administration Microsoft et Systèmes industriels",h:20,ects:"1.5"},
+    {code:"RE317",name:"Administration, routage, QoS",h:"36.5",ects:"2.25"},
+    {code:"IT334",name:"Virtualisation des systèmes",h:16,ects:"1.25"}
+    ]},
+    { code:"UE I9RSR-D",
+    name:"Sécurité et système d'information",
+    ec:[{code:"RE352",name:"Aspect légaux, certifications, politiques cyber-sécurité",h:27,ects:2},
+    {code:"RE353",name:"Cyberdéfense, aspects sociaux",h:31,ects:2},
+    {code:"PR311",name:"Développement système",h:16,ects:"1.25"},
+    {code:"PR318",name:"Projet développement en cyber-sécurité",h:12,ects:"1.25"}
+    ]},
+    { code:"UE I9-A",
+    name:"Langues et culture de l'ingénieur",
+    ec:[{code:"CE302",name:"Projet professionnel: niveau 3",h:"6.66",ects:0},
+    {code:"CE320",name:"Soutenance de projet professionnel",h:"2.66",ects:0},
+    {code:"CE321",name:"Challenge Entreprise",h:"2.66",ects:"2.5"},
+    {code:"LC301",name:"LV1 Anglais",h:26,ects:"2.5"}
+    ]}];
+
+    var rows="";
+    for (var i in SYLLABUS) {
+    var ue=SYLLABUS[i];
+    rows+="<tr class='success'><th colspan='3'>"+ue.name+"</th><th>Heures</th><th>ECTS</th></tr>\n";
+    for (var j in ue.ec) {
+    var ec=ue.ec[j];
+    rows+="<tr>";
+      if (j==0) rows+="<td rowspan='"+ue.ec.length+"'>"+ue.code+"</td>"; 
+      rows+="<td>"+ec.code+"</td><td><a href='#"+ec.code+"' data-toggle='modal' data-target='#"+ec.code+"'>"+ec.name+"</a></td><td>"+ec.h+"</td><td>"+ec.ects+"</td></tr>\n";
+    }
+    }  
+    console.log(rows);
+    $("#syllabus").html(rows);
+
+    $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</body>
+</html>
