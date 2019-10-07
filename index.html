@@ -8,7 +8,16 @@
     <meta name="description" content="Robot, Robotique ENSEIRB-MATMECA, ENSC, Bordeaux INP, ROS">
     <link rel="icon" type="image/png" href="favicon.png" />
     <title>Robotique et apprentissage</title>
-
+    <style>
+      @media (max-width: 995px) {
+        #videoCarousel {
+          display:none;
+        }
+        #actualContent {
+          margin-top: 110px;
+        }
+      }
+    </style>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="/favicon.png" />
@@ -63,11 +72,11 @@
     <div id="videoCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active text-center">
-		  <video class="video-fluid" autoplay loop muted style="width:100%;">
-			<source src="/assets/BordeauxINP_option_RA.mp4" type="video/mp4" />
-	      </video>
-		</div>
-	  </div>
+          <video class="video-fluid" autoplay loop muted style="width:100%;">
+            <source src="/assets/BordeauxINP_option_RA.mp4" type="video/mp4" />
+	        </video>
+		    </div>
+	    </div>
     </div><!-- /.carousel -->
     
 
@@ -75,29 +84,29 @@
 	 ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <div id="actualContent" class="container marketing">
 
       <!-- START THE FEATURETTES -->
-      <div class="row featurette">
+      <div class="featurette">
         <img class="featurette-image img-responsive pull-left" style="width:20em" src="assets/logo_inp.png" alt="Bordeaux INP">
-		<h2 class="featurette-heading">Robotique et apprentissage</h2>
-		<p>
-		La spécialité Robotique et apprentissage de l’ENSEIRB-MATMECA et ENSC est une option de 3<sup>e</sup> année
-		de l'ENSC et de l'ENSEIRB-MATMECA quelle que soit la filière d'origine des étudiants (informatique, électronique, cognitique, mécanique).
-		Elle se déroule sur un semestre de cours et projets puis un semestre de stage, ou bien en contrat de professionnalisation en entreprise.
-		</p>
-		<p>
-		Cette spécialité forme des ingénieurs avec des compétences pluridisciplinaires nécessaires à la conception de robots :
-		logiciel, mécatronique, communication homme-machine et apprentissage machine.
-		Les élèves ingénieurs apprennent la théorie et la pratique de robots variés, qu'ils
-		soient roulants ou manipulateurs, au service de problématiques variées : de la robotique 
-		sociale à la robotique industrielle.
-		</p>
-		<p>
-		En outre, pour mieux comprendre les mécanismes d'apprentissage chez l'homme d'une part et doter les machines de capacités de
-		prédiction et d'adaptation d'autre part, les neurobiologistes utilisent le robot comme plateforme d'expérimentation d'algorithmes d'apprentissage
-		(machine learning), également abordés dans la spécialité.
-		</p>
+        <h2 class="featurette-heading">Robotique et apprentissage</h2>
+        <p>
+        La spécialité Robotique et apprentissage de l’ENSEIRB-MATMECA et ENSC est une option de 3<sup>e</sup> année
+        de l'ENSC et de l'ENSEIRB-MATMECA quelle que soit la filière d'origine des étudiants (informatique, électronique, cognitique, mécanique).
+        Elle se déroule sur un semestre de cours et projets puis un semestre de stage, ou bien en contrat de professionnalisation en entreprise.
+        </p>
+        <p>
+        Cette spécialité forme des ingénieurs avec des compétences pluridisciplinaires nécessaires à la conception de robots :
+        logiciel, mécatronique, communication homme-machine et apprentissage machine.
+        Les élèves ingénieurs apprennent la théorie et la pratique de robots variés, qu'ils
+        soient roulants ou manipulateurs, au service de problématiques variées : de la robotique 
+        sociale à la robotique industrielle.
+        </p>
+        <p>
+        En outre, pour mieux comprendre les mécanismes d'apprentissage chez l'homme d'une part et doter les machines de capacités de
+        prédiction et d'adaptation d'autre part, les neurobiologistes utilisent le robot comme plateforme d'expérimentation d'algorithmes d'apprentissage
+        (machine learning), également abordés dans la spécialité.
+        </p>
       </div>
       
       <div class="featurette">
