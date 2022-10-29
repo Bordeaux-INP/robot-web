@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="/carousel.css" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.png" sizes="32x32" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <title>ENSEIRB-MATMECA spécialité Robotique & Apprentissage</title>
+    
+    <style>
+        #videoCarousel {
+          height: 500px;
+          overflow: hidden;
+        }
+     
+      .navbar-logo {
+        height: 30px;
+        margin-right: 15px;
+      }
+      
+      blockquote {
+        text-align: justify;
+      }
+      
+      @media (max-width: 995px) {
+      #videoCarousel {
+        display: none;
+      }
+
+      #actualContent {
+        margin-top: 110px;
+      }
+    }
+      
+    </style>
+
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <img class="navbar-logo" src="assets/logo_inp_header.png" alt="Bordeaux INP">
+      <a class="navbar-brand" href="/">Robotique & Apprentissage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/collaborer.html">Collaborer</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Manifestations
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="https://meet-up-educate.fr/"
+                      title="Evénement de mise en relation entre entreprises et étudiants">Meetup & Educate</a>
+                  </li>
+                  <li><a class="dropdown-item" href="https://robotmakersday.fr/"
+                      title="Le rendez-vous semestriel des roboticiens aquitains">Robot Makers' day</a>
+                  </li>
+                  <li><a class="dropdown-item" href="https://ros4.pro"
+                      title="Le workshop ROS4PRO étudiants + professionnels sur la robotique opensource">Workshop
+                      robotique</a>
+                  </li>
+                  <li><a class="dropdown-item" href="https://ai4industry.fr/"
+                      title="Conférences et travaux pratiques sur des cas d'utilisation de l'IA dans l'industrie">AI4Industry</a>
+                  </li>
+            </ul>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Réseautage
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/groups/8843247"
+                      title="Rejoignez ce groupe si vous êtes un.e actuel ou ancien étudiant.e de la promo Robot de Bordeaux INP pour garder le contact après l'école">
+                      Alumni roboticiens de Bordeaux INP</a>
+                  </li>
+                  <li><a class="dropdown-item"  href="https://www.meetup.com/meetup-group-GNMZkNib/"
+                      title="Apéro + robotique : boire et échanger de mécatronique autour d'une bière à Bordeaux">
+                      Apérobots à Bordeaux</a>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.aquitaine-robotics.com/membres-du-cluster.html"
+                      title="La liste des entreprises du cluster Aquitaine Robotics : plus de 115 entreprises de la région spécialisées en robotique">
+                      Liste des entreprises locales de robotique</a>
+                  </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Emplois et stages
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item"  href="https://www.linkedin.com/groups/8966637"
+                      title="Rejoignez librement ce groupe pour trouver des jobs ou stages dans l'ingénierie robotique en France et en Europe">
+                      Linkedin : Jobs/stages en robotique</a></li>
+                  <li><a class="dropdown-item"  href="https://twitter.com/JobsEnRobotique"
+                      title="Suivez ce compte pour trouver des jobs ou stages dans l'ingénierie robotique en France et en Europe">
+                      Twitter : Jobs/stages en robotique</a></li>
+                  <li><a class="dropdown-item"  href="https://discourse.ros.org/c/jobs/"
+                      title="Consultez ici des offres d'emploi et de stage autour du framework robotique ROS (monde entier)">
+                      Jobs/stages ROS (monde entier)</a></li>
+                  <li><a class="dropdown-item"  href="https://gdr-macs.cnrs.fr/recrutement"
+                      title="Consultez ici des offres d'emploi de stage ou de thèse du Groupement de Recherche Robotique (GdR)">
+                      Jobs/stages du GdR Robotique</a></li>
+                  <li><a class="dropdown-item"  href="https://enseirb-matmeca.jobteaser.com/"
+                      title="Consulter les offres de stage ou emploi jeune diplômé disponibles sur le Career Center ENSEIRB-MATMECA (réservé au étudiants ENSEIRB-MATMECA)">
+                      Consulter les offres du Career Center</a></li>
+                  <li><a class="dropdown-item"  href="https://enseirb-matmeca.bordeaux-inp.fr/fr/entreprises-stages-emplois"
+                      title="Déposer une offre de stage ou emploi jeune diplômé sur le Career Center ENSEIRB-MATMECA">
+                      Déposer une offre sur le Career Center</a></li>
+                  <li><a class="dropdown-item"  href="https://www.frenchtechbordeaux.com/job"
+                      title="Emplois et stages des entreprises tech (pas forcément robotiques) de la région">
+                      Job board de French Tech Bordeaux</a></li>
+            </ul>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Autres spécialités de 3<sup>ème</sup> année
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item"  href="/amf" title="Algorithmes et Méthodes Formelles">AMF</a></li>
+                  <li><a class="dropdown-item"  href="/cisd" title="Calcul Intensif et Science de la Donnée">CISD</a></li>
+                  <li><a class="dropdown-item"  href="/gl" title="Génie Logiciel">GL</a></li>
+                  <li><a class="dropdown-item"  href="/glrt" title="Génie Logiciel des Réseaux et Télécommunications">GLRT</a></li>
+                  <li><a class="dropdown-item"  href="/ia" title="Intelligence Artificiell">IA</a></li> 
+                  <li><a class="dropdown-item"  href="/iref" title="Ingénierie du Risque Economique et Financier">IREF</a></li>
+                  <li><a class="dropdown-item"  href="/rsr" title="Cybersécurité, Systèmes et Réseaux">RSR</a></li>
+                  <li><a class="dropdown-item"  href="/robot" title="Robotique et Apprentissage">Robot</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Carousel
+	 ================================================== -->
+  <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active text-center">
+        <video class="video-fluid" autoplay loop muted style="width:100%;">
+          <source src="/assets/BordeauxINP_option_RA.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+  <!-- /.carousel -->
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+
+    <!-- START THE FEATURETTES -->
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2>Robotique, mécatronique et IA</h2>
+        <p>
+          La spécialité Robotique et Apprentissage de l’ENSEIRB-MATMECA et ENSC est une option de 3<sup>ème</sup> année
+          de l'ENSC et de l'ENSEIRB-MATMECA en filière informatique, électronique, ou cognitique.
+          Elle se déroule sur un semestre de cours et projets puis un semestre de stage, ou bien en contrat de
+          professionnalisation en entreprise.
+        </p>
+        <p>
+          Cette spécialité forme des ingénieurs avec des compétences pluridisciplinaires nécessaires à la conception de
+          robots :
+          logiciel, mécatronique, communication homme-machine et apprentissage machine.
+          Les élèves ingénieurs apprennent la théorie et la pratique de robots variés, qu'ils
+          soient roulants ou manipulateurs, au service de problématiques variées : de la robotique
+          sociale à la robotique industrielle.
+        </p>
+        <p>
+          En outre, pour mieux comprendre les mécanismes d'apprentissage chez l'homme d'une part et doter les machines de
+          capacités de
+          prédiction et d'adaptation d'autre part, les neurobiologistes utilisent le robot comme plateforme
+          d'expérimentation d'algorithmes d'apprentissage
+          (machine learning), également abordés dans la spécialité.
+        </p>
+      </div>
+      <div class="col-md-5">
+      <img style="height:350px;" src="assets/husky-ur3.jpg" alt="Robot roulant Husky avec un bras UR3e" title="Robot roulant Husky avec un bras préhenseur UR3e">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2><span class="text-muted">La mouvance</span> Maker</h2>
+      <p>
+        Inscrit dans la mouvance « maker » caractérisée par la création, le prototypage et le partage de projets
+        mécatroniques,
+        la spécialité est en partie enseignée à <a href="http://eirlab.net">Eirlab</a> le « fablab » de Bordeaux INP.
+        Eirlab est un laboratoire de fabrication organisé sous forme associative, disposant de machines à commande numérique pour prototyper ses propres robots
+        et échanger avec les autres makers.
+      </p>
+      <p>
+        Afin de favoriser les échanges des étudiant.e.s avec les ingénieurs en activités et les entreprises, trois temps
+        forts ont lieu durant la formation : Le <a href="http://robotmakersday.fr/">Robot Makers' day</a>, le rendez-vous aquitain des
+        roboticiens ; le salon
+        <a href="https://meet-up-educate.fr/">Meet-up & Educate</a> dédié à la mise en place de projets robotiques
+        communs entre entreprises et
+        étudiants, ainsi que le <a href="http://www.ros4.pro/" workshop ROS4PRO></a> portant sur le <a
+          href="https://www.ros.org/">logiciel robotique opensource ROS</a> auquel participent également des ingénieurs en activité. 
+          Les entreprises sont les bienvenues pour <a href="/collaborer.html">collaborer avec notre formation</a>.
+      </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+      <img style="height:290px;" src="assets/megabot.jpg" alt="Robot quadrupède Megabot" title="Robot quadrupède Megabot">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2><span class="text-muted">Uen spécialité connectée aux</span> professionnels</h2>
+      <p>
+        Cette spécialité est fortement connectée aux professionnels de la robotique via le cluster <a
+          href="http://www.aquitaine-robotics.com/">Aquitaine Robotics</a>.
+        Elle bénéficie de projets concrets inspirés des besoins de plus de 110 entreprises de la filière robotique de
+        Nouvelle Aquitaine. La région se différencie
+        par son excellence en robotique collaborative (cobotique) et en interaction homme-machine. Les champs d’application
+        sont nombreux : industrie 4.0, santé, transport, logistique, agriculture, défense, éducation …
+      </p>
+      <p>
+      En juillet 2023, Bordeaux accueille la plus grande compétition mondiale de robotique <a href="https://2023.robocup.org/">RoboCup</a> au parc des expositions de Bordeaux Lac.
+      Cette compétition rassemble les meilleurs chercheurs en robotique au monde qui s'affrontent sur des challenges robotiques ouverts au public
+      sur différentes ligues thématiques : foot robotique, robotique industrielle, robotique à la maison ... 
+      </p>
+      </div>
+      <div class="col-md-5">
+      <img style="height:290px;" src="assets/logo_eirlab_ros4pro.png" alt="Fablab Eirlab Community et formation ROS4PRO" title="Fablab Eirlab Community et formation ROS4PRO">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+
+    <div class="row featurette">
+      <div class="col-md-8 order-md-2">
+        <h2>Les enseignements <span class="text-muted">de la spécialité</span></h2>
+      <p>Le détail des cours est disponible sur le syllabus : <a
+          href="http://enseirb-matmeca.bordeaux-inp.fr/syllabus/pdf/syllabus_EN_9ROBOT.pdf">en formation initiale</a>,
+        ou bien
+        <a
+          href="assets/doc/ENSEIRB-MATMECA%20Option%20Robot%20Contrat%20de%20professionnalisation%20Annexe%201%20Programme%20de%20formation.pdf">en
+          contrat de professionnalisation</a> (cf le <a
+          href="assets/doc/ENSEIRB-MATMECA%20Option%20Robot%20Contrat%20de%20Professionnalisation%20Annexe%202%20Calendrier.pdf">calendrier-type</a> du contrat pro).
+      </p>
+      <p>Les cours techniques sont pluridisciplinaires en logiciel, électronique, mécanique et interaction homme-robot ;
+        et sont accessibles à tous les étudiants quelle que soit leur filière d'origine.
+        Ainsi, les étudiants pourraient devoir se mettre à niveau avant de commencer la spécialité, sur
+        les notions nouvelles pour eux. 
+      </p>
+      <h3>
+        Liste des prérequis et ressources pour se mettre à niveau
+      </h3>
+      <ul>
+        <li>
+          <strong>Programmation Python</strong>
+          <ul>
+            <li><em>Niveau requis</em> : savoir écrire un programme Python simple, connaître la syntaxe et les structures de contrôle</li>
+            <li><em>Pour se mettre à niveau</em> : <a href="https://openclassrooms.com/fr/courses/4262331-demarrez-votre-projet-avec-python">Démarrer votre projet avec Python, Openclassrooms</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Programmation C++</strong>
+          <ul>
+            <li><em>Niveau requis</em> : savoir écrire un programme C++ simple, connaître la syntaxe et les structures de contrôle</li>
+            <li><em>Pour se mettre à niveau</em> : <a href="https://openclassrooms.com/fr/courses/1894236-programmez-avec-le-langage-c">Programmez avec le langage C++, Openclassrooms</a></li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+      <div class="col-md-4 order-md-1">
+      <img style="height:400px;" src="assets/syllabus_thumb.png" alt="Le programme des enseignements">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- /END THE FEATURETTES -->
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="assets/metabot.png" alt="Robot Metabot" width="140" height="140">
+        <h2>Metabot : des robots à pattes pour tous</h2>
+        <p>Une plateforme ouverte dédiée à l'éducation de la primaire au supérieur</p>
+        <p><a target="_blank" class="btn btn-primary" href="http://www.metabot.fr/" role="button">En savoir +</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="assets/cherry.jpg" alt="Projet Cherry" width="140" height="140">
+        <h2>Cherry : Rompre l'isolement des enfants hospitalisés</h2>
+        <p>Cherry utilise le robot humanoïde Poppy Torso comme compagnon pour les enfants hospitalisés et ainsi
+          compenser leur rupture sociale.</p>
+        <p><a target="_blank" class="btn btn-primary" href="https://www.poppy-project.org/fr/projects/cherry"
+            role="button">En savoir +</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="assets/tiago.png" alt="Robot TIAGo" width="140" height="140">
+        <h2>TIAGo</h2>
+        <p>Permettre à un robot d'assister nos tâches ménagères en attrapant et manipulant les objets de notre
+          quotidien.</p>
+        <p><a target="_blank" class="btn btn-primary" href="http://robotics.catie.fr/" role="button">En savoir +</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div>
+
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p>&copy; <a href="https://enseirb-matmeca.bordeaux-inp.fr">Bordeaux INP ENSEIRB-MATMECA</a> et <a href="https://ensc.bordeaux-inp.fr">ENSC</a></p>
+  </footer>
+</main>
+
+
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
+
